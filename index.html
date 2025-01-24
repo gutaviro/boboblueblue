@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Zapf Dingbats'}
+    span.s2 {font: 12.0px 'Apple Color Emoji'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!-- /index.html --&gt;</p>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;<span class="s1">✡︎</span>k01 ta bobo<span class="s1">✡︎</span>&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #121212;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #f8f8f8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', Courier, monospace;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.heart {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: float 2s ease-in-out infinite;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes float {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0%, 100% { transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>50% { transform: translateY(-10px); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="flex flex-col items-center justify-center min-h-screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="text-center space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="text-4xl font-bold mb-6"&gt;vamos la e erre 33 vezes, pipo?&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-gray-400 italic"&gt;forever yours, in our little dark corner of the world<span class="s1">✡︎✡︎✡︎</span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="name1" placeholder=". . ."<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                   </span>class="bg-gray-800 text-center text-white px-4 py-2 rounded focus:outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="name2" placeholder=". . ."<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                   </span>class="bg-gray-800 text-center text-white px-4 py-2 rounded focus:outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="loveButton"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>class="mt-4 bg-red-500 text-white px-6 py-3 rounded-full focus:outline-none hover:bg-red-600 transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span><span class="s2">❤️</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="heartsContainer"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const messageContainer = document.createElement('p');</p>
+<p class="p1">messageContainer.id = 'errorMessage';</p>
+<p class="p1">document.body.appendChild(messageContainer);</p>
+<p class="p2"><br></p>
+<p class="p1">loveButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const name1 = document.getElementById('name1').value.toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const name2 = document.getElementById('name2').value.toLowerCase();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const names = [name1, name2];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const errorMessage = document.getElementById('errorMessage');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (names.includes('alice') &amp;&amp; names.includes('gustavo')) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>heartsContainer.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>errorMessage.textContent = ''; // se aparecer msg de erro, remove aut.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let i = 0; i &lt; 50; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const heart = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heart.className = 'heart text-black';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heart.style.left = `${Math.random() * 100}vw`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heart.style.top = `${Math.random() * 100}vh`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heart.style.animationDelay = `${Math.random()}s`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heart.innerText = '<span class="s2">🖤</span><span class="s1">✡︎</span>';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heartsContainer.appendChild(heart);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>errorMessage.textContent = '33';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>errorMessage.style.color = 'red';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>//deu erro o botao, mas fodasse eu nao faço ideia de como arrumar e nao vou perguntar ao chatgpt</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
